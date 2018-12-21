@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="mt30 pl30 brand-title">
+            <span class="">Questioner</span>
+
+        </div> 
+
+<div class="topnav" id="myTopnav">
+  <a href="../index.html" class="active">Home</a>
+  <a href="#meetup">Meetups</a >
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+  </a>
+</div>
+    </div>
+    <h3 class="a-title">Create a Meetup</h3>
+    <div class="mt30 a-wrapper">
+        <div class="a-side-nav">
+            <div>
+                <a href="./create.html" class="no-decoration">
+                    <div class="a-nav-item active">Create a meetup</div>
+                </a>
+                <a href="./delete.html" class="no-decoration">
+                    <div class="mt20 a-nav-item">Delete a meetup</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="a-content">
+            <div class="form-box">
+
+                <form class="pl30" id="a-form">
+
+                    <input placeholder="Meetup Title" class="a-input" type="text">
+                    <textarea onkeyup="autoHeight(this)" placeholder="Description" class="mt20 a-textarea" name="" id=""
+                        rows="1"></textarea>
+                    <select id="category" class="mt20 a-input" name="" id="" class="">
+                        <option disabled class="">Choose Category</option>
+                        <option>Category A</option>
+                        <option>Category B</option>
+                        <option>Category C</option>
+                        <option>Category D</option>
+                        <option>Category E</option>
+                        <option value="new-cat" id="new-category">Add new category...</option>
+
+                    </select>
+                    <input hidden id="new-category-input" placeholder="New Category" class="mt20 a-input" type="text">
+                    <input placeholder="Tags" class="mt20 a-input" type="text">
+                    <input class="mt20 a-submit" type="submit" value="Publish">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

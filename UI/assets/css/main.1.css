@@ -1,0 +1,51 @@
+
+/* nav bar */
+.nav-bar{
+    height: 100px;
+    background-color: #444444;
+}
+/* nav bar ends */
+
+
+
+
+/* container */
+.container{
+ margin-left: 20%;   
+ margin-right: 20%;   
+}
+
+/* container ends */
+.vote{
+background-color: red;
+padding: 15px;
+display:inline-block;
+ 
+}
+
+.vote-arrow img{
+    height: 35px;
+}
+
+.votes{
+    margin-left: 3px;
+}
+
+ 
+
+/* question */
+
+.question-box{
+    display: inline-block;
+    padding: 20px;
+    background-color: cyan;
+    width: 80%;
+
+}
+
+.question-text{
+    display: inline;
+    font-size: 1.2em;
+}
+
+/* question */
