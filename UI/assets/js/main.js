@@ -16,11 +16,22 @@ category[0].addEventListener("click",()=>{
 })
 
  
-function myFunction() {
+function toggleMenu() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
       x.className += " responsive";
     } else {
       x.className = "topnav";
     }
+  }
+var askOn=false;
+  function toggleAsk(){
+askOn=!askOn;
+    if(askOn) {
+      document.getElementById('ask-question').style="display:block"
+    }else{
+      document.getElementById('ask-question').style="display:none"
+      document.getElementById('ask-btn').innerText="Hide Ask Question" 
+    }
+
   }
