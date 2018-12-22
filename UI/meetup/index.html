@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="nav-bar">
+
+        <div class="topnav-logo">
+            <a id="brand-logo" href="./index.html" class=""> Questioner</a>
+
+        </div>
+
+        <div class="pl30 topnav" id="myTopnav">
+            <a href="../index.html" class="active">Home</a>
+            <a href="#meetup">Meetups</a>
+            <a href="#about">About</a>
+            <a class="login" href="./login.html">Login</a>
+            <a class="register" href="./register.html">Register</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="">
+        <span class="mt30 meetup-title">Andela Meetup 4.0</span>
+
+        <div class="m-search-ask-box">
+            <div class="mt20 search-box">
+                <input placeholder="Type Keywords..." type="search" name="">
+                <input class="a-search-btn" type="button" value="Search Meetup">
+            </div>
+            <div class="mt20">
+                <button onclick="toggleAsk()" id="ask-btn" class="m-ask-btn">Ask A Question.</button>
+            </div>
+        </div>
+        <div class="mt30" hidden id="ask-question">
+            <div class="form-box">
+
+                <form class="pl30" id="a-form">
+
+                    <input placeholder="Question Title" class="a-input" type="text">
+                    <textarea onkeyup="autoHeight(this)" placeholder="Question Description" class="mt20 a-textarea"
+                        name="" id="" rows="1"></textarea>
+                    <input class="mt20 a-submit" type="submit" value="Post">
+                </form>
+            </div>
+        </div>
+
+        <div class="questions">
+
+            <div class="mt20 q-item">
+                <div class="q-text">
+                    Question
+                </div>
+                <div class="q-replies">Replies
+                </div>
+                <div class="q-upvotes">Upvotes
+                </div>
+                <div class="q-views">Views
+                </div>
+            </div>
+
+
+
+            <div class="mt30 q-item">
+                <div class="q-text">
+                    <a href="../question/index.html" class="no-decoration">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ipsum, nobis.</a>
+                </div>
+                <div class="q-replies">5
+                </div>
+                <div class="q-upvotes">201
+                </div>
+                <div class="q-views">304
+                </div>
+            </div>
+
+            <div class="mt20 q-item">
+                <div class="q-text">
+                    <a href="../question/index.html" class="no-decoration">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ipsum, nobis.</a>
+                </div>
+                <div class="q-replies">5
+                </div>
+                <div class="q-upvotes">201
+                </div>
+                <div class="q-views">304
+                </div>
+            </div>
+
+            <div class="mt20 q-item">
+                <div class="q-text">
+                    <a href="../question/index.html" class="no-decoration">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ipsum, nobis.</a>
+                </div>
+                <div class="q-replies">5
+                </div>
+                <div class="q-upvotes">201
+                </div>
+                <div class="q-views">304
+                </div>
+            </div>
+
+            <div class="mt20 q-item">
+                <div class="q-text">
+                    <a href="../question/index.html" class="no-decoration">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ipsum, nobis.</a>
+                </div>
+                <div class="q-replies">5
+                </div>
+                <div class="q-upvotes">201
+                </div>
+                <div class="q-views">304
+                </div>
+            </div>
+
+            <div class="mt20 q-item">
+                <div class="q-text">
+                    <a href="../question/index.html" class="no-decoration">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ipsum, nobis.</a>
+                </div>
+                <div class="q-replies">5
+                </div>
+                <div class="q-upvotes">201
+                </div>
+                <div class="q-views">304
+                </div>
+            </div>
+
+            <div class="mt20 q-item">
+                <div class="q-text">
+                    <a href="../question/index.html" class="no-decoration">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ipsum, nobis.</a>
+                </div>
+                <div class="q-replies">5
+                </div>
+                <div class="q-upvotes">201
+                </div>
+                <div class="q-views">304
+                </div>
+            </div>
+
+            <div class="mt20 q-item">
+                <div class="q-text">
+                    <a href="../question/index.html" class="no-decoration">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ipsum, nobis.</a>
+                </div>
+                <div class="q-replies">5
+                </div>
+                <div class="q-upvotes">201
+                </div>
+                <div class="q-views">304
+                </div>
+            </div>
+
+            <div class="mt20 q-item">
+                <div class="q-text">
+                    <a href="../question/index.html" class="no-decoration">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ipsum, nobis.</a>
+                </div>
+                <div class="q-replies">5
+                </div>
+                <div class="q-upvotes">201
+                </div>
+                <div class="q-views">304
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+    <div class="fixed-demo-pages">
+
+        <a href="../login.html" class="">login</a>
+        <a href="../register.html" class="">register</a>
+        <a href="../admin/create.html" class="">Create Meetup</a>
+        <a href="../admin/delete.html" class="">Delete Meetup</a>
+        <a href="../question/index.html" class="">Question Page</a>
+        <a href="../meetup/index.html" class="">Ask a Question</a>
+        <a href="../user/dashboard.html" class="">User dashboard</a>
+        <span class="">Demo Pages</span>
+    </div>
+
+
+
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
