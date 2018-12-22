@@ -7,14 +7,28 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/main.css" />
-    <script src="../assets/js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
 </head>
 
 <body>
     <div class="nav-bar">
-             <div class="mt30 pl30 brand-title">
-<span class="">Questioner</span>
-             </div>
+
+        <div class="topnav-logo">
+            <a id="brand-logo" href="../../index.html" class=""> Questioner</a>
+
+        </div>
+
+        <div class="pl30 topnav" id="myTopnav">
+            <a href="../index.html" class="active">Home</a>
+            <a href="#meetup">Meetups</a>
+            <a href="#about">About</a>
+            <a class="login" href="../login.html">Login</a>
+            <a class="register" href="../register.html">Register</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </div>
     <div class="container">
 
@@ -89,7 +103,21 @@
             </div>
         </div>
     </div>
-    <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>
+    <br>  <br>  <br>  <br>  <br>  <br>  
+    
+    <div class="fixed-demo-pages">
+
+        <a href="../login.html" class="">login</a>
+        <a href="../register.html" class="">register</a>
+        <a href="../admin/create.html" class="">Create Meetup</a>
+        <a href="../admin/delete.html" class="">Delete Meetup</a>
+        <a href="../question/index.html" class="">Question Page</a>
+        <a href="../meetup/index.html" class="">Ask a Question</a>
+        <a href="../user/dashboard.html" class="">User dashboard</a>
+        
+    </div>
+    <span id="demo-links" class="">Show Demo Pages</span>
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>

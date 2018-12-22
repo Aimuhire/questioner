@@ -7,21 +7,38 @@
   <title>Page Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/main.css" />
-  <script src="../assets/js/main.js"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <div class="nav-bar">
-    <div class="mt30 pl30 brand-title"><span class="">Questioner</span></div>
+
+    <div class="topnav-logo">
+      <a id="brand-logo" href="../../index.html" class=""> Questioner</a>
+
+    </div>
+
+    <div class="pl30 topnav" id="myTopnav">
+      <a href="../index.html" class="active">Home</a>
+      <a href="#meetup">Meetups</a>
+      <a href="#about">About</a>
+      <a class="login" href="../login.html">Login</a>
+      <a class="register" href="../register.html">Register</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
   </div>
   <div class="container">
     <div class="user-box">
-      
+
       <div class="q-feed">
-          <div class="mt20 search-box">
-              <input placeholder="Type Keywords..." type="search" name="">
-              <input class="a-search-btn" type="button" value="Search Question">
-          </div>
+        <div class="mt20 search-box">
+          <input placeholder="Type Keywords..." type="search" name="">
+          <input class="a-search-btn" type="button" value="Search Question">
+        </div>
         <div class="recent-box">
           <h3 class="list-title">Top questions feed</h3>
           <div class="feed-box">
@@ -74,9 +91,9 @@
                 <div>
                   <a href="#!" class="q-feed q-feed-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Consequatur obcaecati rerum at omnis quo voluptatum, reprehenderit aut vel cumque consectetur.
-                   </a> <span class="q-feed-meetup">Andela ALC meetup 4.0 </span> <span class="q-feed-date">January
-                      8th,2010.
-                      3:45am</span></div>
+                  </a> <span class="q-feed-meetup">Andela ALC meetup 4.0 </span> <span class="q-feed-date">January
+                    8th,2010.
+                    3:45am</span></div>
                 <div></div>
               </div>
             </div>
@@ -95,22 +112,36 @@
         </div>
       </div>
       <div class="mt30 q-stats">
-          <div class="stat">
-              <div class="stat-number">34
-              </div>
-              <span class="stat-title">Questions Asked</span>
-    
-            </div>
-            <div class="stat">
-                <div class="stat-number">84
-                </div>
-                <span class="stat-title">Comments</span>
-      
-              </div>
+        <div class="stat">
+          <div class="stat-number">34
+          </div>
+          <span class="stat-title">Questions Asked</span>
+
+        </div>
+        <div class="stat">
+          <div class="stat-number">84
+          </div>
+          <span class="stat-title">Comments</span>
+
+        </div>
       </div>
-      
+
     </div>
   </div>
+  <div class="fixed-demo-pages">
+
+    <a href="../login.html" class="">login</a>
+    <a href="../register.html" class="">register</a>
+    <a href="../admin/create.html" class="">Create Meetup</a>
+    <a href="../admin/delete.html" class="">Delete Meetup</a>
+    <a href="../question/index.html" class="">Question Page</a>
+    <a href="../meetup/index.html" class="">Ask a Question</a>
+    <a href="../user/dashboard.html" class="">User dashboard</a>
+
+  </div>
+  <span id="demo-links" class="">Show Demo Pages</span>
+  <script src="../assets/js/main.js"></script>
+  
 </body>
 
 </html>
