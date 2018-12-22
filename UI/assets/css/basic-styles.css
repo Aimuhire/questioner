@@ -72,3 +72,22 @@ background:#2e3830;
     
      }
     
+
+
+ @media screen and (max-width: 600px) {
+
+    .container{
+        margin: 0 0%;  
+
+    }
+
+
+    .input-field{
+        margin: 10px 0;  
+        font-size: 0.8em;  
+        padding: 10px;
+    
+    } 
+
+    
+ }
